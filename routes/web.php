@@ -55,6 +55,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // praktikum 2
 // Halaman Dashboard
+Route::get('/', function () {
+    return view('dashboard');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
