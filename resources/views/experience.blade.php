@@ -16,6 +16,6 @@
 
 @section('footer')
     <p class="text-center">
-        2141720039 | <a class="text-body" href="https://github.com/AlyAbdulloh">Achmad Aly Abdulloh</a>
+        2141720039 | <a class="text-body" href="https://github.com/AlyAbdulloh/03_praktikum_web_lanjut">Achmad Aly Abdulloh</a>
     </p>
 @endsection
