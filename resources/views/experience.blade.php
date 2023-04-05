@@ -7,10 +7,10 @@
 @endsection
 
 @section('content')
-    <p>saya mempunyai banyak pengalaman di perkuliahan. </br>
-       dimulai dari saya yang awal masuk kuliah seperti salah jurusan, tapi... </br>
-       berkat dukungan dan motivasi dari orangtua saya, saya bekerja keras belajar sepanjang waktu, dan yaa </br>
-       Usaha tak akan menghianati hasil.....
+    <p>
+        @foreach ($dataUser as $data)
+            {{ $data->pengalaman_kuliah }}
+        @endforeach
     </p>
 @endsection
 

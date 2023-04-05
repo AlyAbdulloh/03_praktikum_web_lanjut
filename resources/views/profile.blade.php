@@ -8,9 +8,12 @@
 
 @section('content')
     <ul>
-        <li>NIM  : {{ $nim }}</li>
-        <li>Nama        : Achmad Aly Abdulloh</li>
-        <li>kelas      : TI-2E</li>
+        @foreach ($dataUser as $data)
+            <li>NIM : {{ $data->NIM }}</li>
+            <li>Nama : {{ $data->name }}</li>
+            <li>Kelas : {{ $data->kelas }}</li>
+            
+        @endforeach
     </ul>
 @endsection
 

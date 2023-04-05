@@ -326,7 +326,7 @@ return [
         ],
         [
             'text' => 'profile',
-            'url'  => 'profile/2141720039',
+            'url'  => 'profile',
             'icon' => '',
         ],
         [

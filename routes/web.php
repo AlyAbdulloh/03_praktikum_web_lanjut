@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ExperienceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +66,10 @@ Route::get('/dashboard', function () {
 });
 
 //halaman profile
-Route::get('/profile/{nim}', fn($nim)=> view('profile', ['nim' => $nim]));
+// Route::get('/profile/{nim}', fn($nim)=> view('profile', ['nim' => $nim]));
+
+Route::get('/profile', [UserController::class, 'index']);
 
 //halaman Experience
-Route::get('/experience', fn()=> view('experience'));
+// Route::get('/experience', fn()=> view('experience'));
+Route::get('/experience', [ExperienceController::class, 'index']);
