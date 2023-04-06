@@ -11,7 +11,8 @@ class UserController extends Controller
     public function index()
     {
         # code...
-        $user = User::all();
+        $user = User::where('NIM', '2141720039')->get();
+        // $user = User::all();
         return view('profile', ['dataUser' => $user]);
     }
     

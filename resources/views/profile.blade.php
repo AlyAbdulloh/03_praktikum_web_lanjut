@@ -9,10 +9,10 @@
 @section('content')
     <ul>
         @foreach ($dataUser as $data)
+            <li>ID Prodi : {{ $data->prodi_id }}</li>
             <li>NIM : {{ $data->NIM }}</li>
             <li>Nama : {{ $data->name }}</li>
-            <li>Kelas : {{ $data->kelas }}</li>
-            
+            <li>Kelas : {{ $data->kelas }}</li>    
         @endforeach
     </ul>
 @endsection
